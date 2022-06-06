@@ -1,20 +1,15 @@
 import Hero from '../components/Hero';
+import Videos from '../components/Videos';
+import TextBlock from '../components/TextBlock';
 
 export default function Home() {
   return (
     <>
-      <main>
-        <Hero />
-        <div className='contentContainer'>test</div>
-      </main>
+      <Hero />
+      <Videos />
+      <TextBlock />
 
-      <style jsx>
-        {`
-          .contentContainer {
-            margin: 0px 100px;
-          }
-        `}
-      </style>
+      <style jsx>{``}</style>
     </>
   );
 }

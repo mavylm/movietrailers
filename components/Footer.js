@@ -4,48 +4,44 @@ import Logo from '../public/assets/logo.png';
 const Footer = () => {
   return (
     <>
-      <div className='info'>
-        <div className='infoLinks'>
-          <span className='infoLinksHeader'>Fakesite</span>
-          <br />
-          <a href='#'>About Us</a>
-          <a href='#'>Press</a>
-          <a href='#'>Policies</a>
-          <a href='#'>Help</a>
-        </div>
-        <div className='infoLinks'>
-          <span className='infoLinksHeader'>Account</span>
-          <br />
-          <a href='#'>Edit Profile</a>
-          <a href='#'>Friends</a>
-          <a href='#'>Social</a>
-          <a href='#'>Delete Profile</a>
-        </div>
-      </div>
-      <hr />
       <footer>
-        <a href='#'>
-          <Image src={Logo} alt='Logo' />
-        </a>
-        <div className='footerLinks'>
-          <a href='#'>Terms</a>
-          <a href='#'>Privacy</a>
-          <a href='#'>Site Map</a>
+        <div className='info'>
+          <div className='infoLinks'>
+            <span className='infoLinksHeader'>Fakesite</span>
+            <br />
+            <a href='#'>About Us</a>
+            <a href='#'>Press</a>
+            <a href='#'>Policies</a>
+            <a href='#'>Help</a>
+          </div>
+          <div className='infoLinks'>
+            <span className='infoLinksHeader'>Account</span>
+            <br />
+            <a href='#'>Edit Profile</a>
+            <a href='#'>Friends</a>
+            <a href='#'>Social</a>
+            <a href='#'>Delete Profile</a>
+          </div>
+        </div>
+        <hr />
+        <div className='bottomInfo'>
+          <p>&copy; Movie Trailers 2022</p>
+          <div className='footerLinks'>
+            <a href='#'>Terms</a>
+            <a href='#'>Privacy</a>
+            <a href='#'>Site Map</a>
+          </div>
         </div>
       </footer>
 
       <style jsx>{`
         footer {
           display: flex;
-          justify-content: space-between;
-          align-items: center;
+          flex-direction: column;
           position: relative;
           bottom: 0px;
-          padding: 0px 100px;
-          z-index: 99;
-          color: #fff;
           width: 100%;
-          height: 100px;
+          padding: 40px 100px;
         }
 
         .footerLinks {
@@ -60,7 +56,7 @@ const Footer = () => {
 
         .info {
           display: flex;
-          margin: 100px 100px;
+          margin: 40px 0px 80px 0px;
         }
 
         .infoLinks {
@@ -77,7 +73,11 @@ const Footer = () => {
 
         .infoLinks a {
           text-decoration: none;
-          font-weight: 400;
+        }
+
+        .bottomInfo {
+          display: flex;
+          justify-content: space-between;
         }
       `}</style>
     </>

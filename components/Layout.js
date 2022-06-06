@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Navbar from './Navbar.js';
+// import Navbar from './Navbar.js';
 import Footer from './Footer.js';
 
 const Layout = ({ children }) => {
@@ -13,7 +13,7 @@ const Layout = ({ children }) => {
         <link rel='icon' href='/favicon.ico' />
       </Head>
 
-      <Navbar />
+      {/* <Navbar /> */}
       <main>{children}</main>
       <Footer />
 
@@ -36,7 +36,7 @@ const Layout = ({ children }) => {
 
           h1,
           h2 {
-            margin: 22px;
+            margin: 0px 0px 22px 0px;
           }
 
           h1 {
@@ -73,11 +73,14 @@ const Layout = ({ children }) => {
 
           hr {
             border: 1px solid #e8e8e8;
-            margin: 0px 100px;
+            margin: 22px 0px;
           }
 
           .contentContainer {
             margin: 0px 100px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
           }
 
           .redButton {

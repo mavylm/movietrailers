@@ -2,27 +2,34 @@ const Hero = () => {
   return (
     <>
       <div className='hero-image'>
-        <div className='hero-container'>
-          <h1>The world's greatest fake site</h1>
-          <p>
-            Create the world's greatest fake site and enjoy
-            <br />
-            the breeze of fresh air when you complete it
-          </p>
-          <button className='redButton'>Do something awesome</button>
+        <div className='bg-overlay'>
+          <div className='hero-container'>
+            <h1>Welcome to Movie Trailers!</h1>
+            <p>
+              A one-stop place to watch movie trailers for free.
+              <br />
+              Create an account to save your favorite movies!
+            </p>
+            <button className='redButton'>Let's go!</button>
+          </div>
         </div>
       </div>
 
       <style jsx>
         {`
           .hero-image {
-            background-image: url('assets/hero-image.png');
+            background-image: url('assets/1988378.jpg');
             background-color: #fff;
             height: 100vh;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
             position: relative;
+          }
+
+          .bg-overlay {
+            background: rgba(0, 0, 0, 0.7);
+            height: 100vh;
           }
 
           .hero-container {
