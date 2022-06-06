@@ -10,7 +10,7 @@ const Hero = () => {
               <br />
               Create an account to save your favorite movies!
             </p>
-            <button className='redButton'>Let's go!</button>
+            <button className='redButton'>Create Account</button>
           </div>
         </div>
       </div>
